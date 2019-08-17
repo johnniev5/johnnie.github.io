@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>关于安卓APK的一点知识</title>
+      <link href="/2019/08/16/%E5%AE%89%E5%8D%93APK/"/>
+      <url>/2019/08/16/%E5%AE%89%E5%8D%93APK/</url>
+      
+        <content type="html"><![CDATA[<p><strong>一个APK文件通常包含以下文件：</strong></p><ul><li>class.dex: Dalvik字节码，可被Dalvik虚拟机执行。</li><li>AndroidManifest.xml: 一个Android清单文件，用户描述该应用程序的名称、版本号、所需权限、注册服务、链接到的其它应用程序。该文件使用XML文件格式。</li><li>META-INF文件夹：下面有3个文件<ul><li>MANIFEST.MF：清单信息</li><li>CERT.RSA：保存应用程序的证书和授权信息</li><li>CERT.SF：保存SHA-1信息资源列表</li></ul></li><li>res：APK所需要的资源文件夹</li><li>assets：不需编译的原始资源文件目录</li><li>resources.arsc：编译后的二进制资源文件</li><li>lib：库文件目录</li></ul><p><strong>Dalvik虚拟机与反编译：</strong></p><p>区别于JAVA虚拟机（JVM），安卓虚拟机称为Dalvik虚拟机（DVM）。Java虚拟机运行的是Java字节码，Dalvik虚拟机运行的是Dalvik字节码。Java虚拟机基于栈架构，Dalvik虚拟机基于寄存器架构。</p><p>DVM拥有专属的DEX可执行文件格式和指令集代码。smali和baksmali则是针对DEX执行文件格式的汇编器和反汇编器，反汇编后DEX文件会产生.smali后缀的代码文件，smali代码拥有特定的格式与语法，smali语言是对Dalvik虚拟机字节码的一种解释。</p><p><a href="https://ibotpeaches.github.io/Apktool/" target="_blank" rel="noopener">apktool</a>工具是在smali工具的基础上进行封装和改进的，除了对DEX文件的汇编与反汇编功能外，还可以对APK中已编译成二进制的资源文件进行反编译和重新编译。如下是使用apktool工具来反汇编APK文件得到其对应文件信息（默认是输出到同名当前目录，可以使用-o参数输出到执行目录）：</p><pre><code>apktool d /Users/johnnie/Downloads/xxx.apk</code></pre><ul><li>AndroidManifest.xml 配置文件</li><li>apktool.yml 反编译生成的文件，供apktool使用</li><li>assets/ 不需反编译的资源文件目录</li><li>lib/ 不需反编译的库文件目录</li><li>res/ 反编译后的资源文件目录</li><li>smali/ 反编译生成的smali 源码文件目录</li></ul><p>其中，smali目录结构对应着原始的java源码src目录。（也是Dalvik字节码提取的关键位置，类似于Windows的EXE的opcode，可见都有其共通性！）</p><p><strong>Dalvik指令的分类与描述</strong></p><p>smali是对DVM字节码的一种解释，虽然不是官方标准语言，但所有语句都遵循一套语法规范。Dalvik opcodes的详细说明可以参考<a href="http://pallergabor.uw.hu/androidblog/dalvik_opcodes.html" target="_blank" rel="noopener">这篇文章</a>，里面详细列举了Dalvik Opcode的含义及用法、例子。</p><p>由于Dalvik指令有两百多条，对需要的进行了分类和精简，去掉了无关的指令，只留下了M、R、G、I、T、P、V七大类核心的指令集合，并且只保留操作码字段，去掉了参数。M、R、G、I、T、P、V七大类指令集合分别代表了移动、返回、跳转、判断、取数据、存数据、调用方法七种类型的指令。如下分类与描述：</p><p><img src="/2019/08/16/安卓APK/opcodes.png" alt="Opcodes"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 恶意软件 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Android </tag>
+            
+            <tag> DVM </tag>
+            
+            <tag> apktool </tag>
+            
+            <tag> smali </tag>
+            
+            <tag> opcode </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>恶意软件的特征提取</title>
+      <link href="/2019/08/15/%E6%81%B6%E6%84%8F%E8%BD%AF%E4%BB%B6/"/>
+      <url>/2019/08/15/%E6%81%B6%E6%84%8F%E8%BD%AF%E4%BB%B6/</url>
+      
+        <content type="html"><![CDATA[<p><img src="/2019/08/15/恶意软件/clamav.png" alt="恶意软件"></p><p><strong>特征提取：</strong></p><ol><li>提取恶意软件进程行为调用系统APIs产生的序列；（恶意程序需在沙箱中执行，比如<a href="https://cuckoosandbox.org/" target="_blank" rel="noopener">Cuckoo</a>和<a href="https://www.virustotal.com" target="_blank" rel="noopener">Virustotal</a>，获取每个程序执行的日志）</li><li>因恶意程序对系统APIs的调用会被操控，可用恶意程序开始执行的头10秒产生的连续数据替代，如系统CPU使用，用户CPU使用，数据包发送，数据包接收，字节发送，字节接收，内存使用，缓存使用，当前运行进程总数，最大进程号等；</li><li>每个恶意程序PE文件里的APIs调用，可以使用<a href="https://www.pydoc.io/pypi/pefilenew-2.2/index.html" target="_blank" rel="noopener">pefile</a>，<a href="https://lief.quarkslab.com/" target="_blank" rel="noopener">LIEF</a>等工具提取，不仅包括APIs；</li><li>系统调用APIs名称为节点，入度为其节点权重，出度为其各连接节点的边权重，构建有向带权图，图的邻接矩阵可作为输入；</li><li>动静态特征：① 请求权限；② 敏感APIs；③ 动态行为；</li><li>抽取恶意软件的opcode，再使用n-gram提取100-300组特征；或是将抽取的opcode组成图，以图关系的邻接矩阵的奇异值分解的头2维度作为输入。</li></ol><p>参考：<a href="https://arxiv.org/pdf/1807.04739.pdf" target="_blank" rel="noopener">https://arxiv.org/pdf/1807.04739.pdf</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 恶意软件 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 机器学习 </tag>
+            
+            <tag> 深度学习 </tag>
+            
+            <tag> 特征抽取 </tag>
+            
+            <tag> 网络安全 </tag>
+            
+            <tag> 恶意软件 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+</search>
