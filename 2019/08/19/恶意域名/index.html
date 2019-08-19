@@ -7,9 +7,11 @@
     <meta name="keywords" content="恶意域名的相关特征, 网络安全, 机器学习, 深度学习, 自然语言, 生活感悟等">
     <meta name="baidu-site-verification" content="fmlEuI34ir">
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48">
-    <meta name="description" content="![DNS隧道](域名.jpeg)
+    <meta name="description" content="
+    
 
-DNS隧道，顾名思义，肯定是数据隐含在DNS数据包中进行传输，我们还有其它隧道，如HTTPS、HTTP proxy，tcp等，因为这些协议的端口一般企业防火前和入侵检测是不会限制的，这为如远程执行，僵尸">
+
+DNS隧道，顾名思义，肯定是数据隐含在DNS数据包中进行传输，我们还有其它隧道，如HTTPS、HTTP proxy，tcp等，因为这些协议的端口一般企业防火前和入侵检测是不会限制的，这为如远程执行，僵尸网络提供了方便。那针对">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -488,7 +490,9 @@ DNS隧道，顾名思义，肯定是数据隐含在DNS数据包中进行传输�
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <div align="center">![DNS隧道](域名.jpeg)</div>
+                <div align="center">
+    <img src="/2019/08/19/恶意域名/域名.jpeg">
+</div>
 
 <p>DNS隧道，顾名思义，肯定是数据隐含在DNS数据包中进行传输，我们还有其它隧道，如HTTPS、HTTP proxy，tcp等，因为这些协议的端口一般企业防火前和入侵检测是不会限制的，这为如远程执行，僵尸网络提供了方便。那针对流量这部分，思路就是要先提取出这部分流量，然后在进行可能存在的恶意行为进行检测。其它隧道的检测也类似。<br>​<br>常见的建立DNS隧道的工具有：ioline、dnscat2、dns2tcp等。那相关的DNS的数据都会通过这个隧道进行传输，在建立完DNS隧道后，我们可以使用抓包工具如tcpdump专门抓取DNS 53协议的数据，这里面就可能存在其它隐含数据，而如果需要使用机器学习来进行辅助检测，那就得把流量数据考虑成文本，使用conv1d来进行基于文本的检测。流量文本可以使用tshark工具来进行转换。<br>​<br>恶意域名检测特征维度：</p>
 <ul>
@@ -914,10 +918,12 @@ DNS隧道，顾名思义，肯定是数据隐含在DNS数据包中进行传输�
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ![爱情树](LoveTree.jpg)
+                            
+    
+
 
 什么是爱情？什么是爱情呢？关于爱情，人们似乎又有很多想说的，但却又欲言欲止… 爱情不是魔法，但却让人无限神往！
-那什么是爱情呢？或许爱情从亚当与夏娃初尝禁果时便产生了，又谁知道呢？！那这么说爱情便
+那什么是爱情呢？或许爱情从亚当与夏娃初尝禁果时便产生了，又谁知道呢？！那这么说爱情便是产生于“性”了？！或许是吧
                         
                     </div>
                     <div class="publish-info">
