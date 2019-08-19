@@ -22,6 +22,8 @@
             
             <tag> 工作 </tag>
             
+            <tag> 兴趣 </tag>
+            
             <tag> 教育 </tag>
             
             <tag> 人生观 </tag>
@@ -31,8 +33,6 @@
             <tag> 世界观 </tag>
             
             <tag> 人生的意义 </tag>
-            
-            <tag> 兴趣 </tag>
             
         </tags>
       
@@ -57,17 +57,17 @@
       
         <tags>
             
-            <tag> 机器学习 </tag>
-            
-            <tag> 深度学习 </tag>
+            <tag> 恶意域名 </tag>
             
             <tag> 特征抽取 </tag>
-            
-            <tag> 恶意域名 </tag>
             
             <tag> 异常检测 </tag>
             
             <tag> 统计分析 </tag>
+            
+            <tag> 机器学习 </tag>
+            
+            <tag> 深度学习 </tag>
             
         </tags>
       
@@ -160,11 +160,11 @@
       
         <tags>
             
+            <tag> 特征抽取 </tag>
+            
             <tag> 机器学习 </tag>
             
             <tag> 深度学习 </tag>
-            
-            <tag> 特征抽取 </tag>
             
             <tag> 网络安全 </tag>
             
