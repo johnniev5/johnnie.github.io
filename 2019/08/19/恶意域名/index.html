@@ -488,7 +488,7 @@ DNS隧道，顾名思义，肯定是数据隐含在DNS数据包中进行传输�
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <center>![DNS隧道](域名.jpeg)</center>
+                <div align="center">![DNS隧道](域名.jpeg)</div>
 
 <p>DNS隧道，顾名思义，肯定是数据隐含在DNS数据包中进行传输，我们还有其它隧道，如HTTPS、HTTP proxy，tcp等，因为这些协议的端口一般企业防火前和入侵检测是不会限制的，这为如远程执行，僵尸网络提供了方便。那针对流量这部分，思路就是要先提取出这部分流量，然后在进行可能存在的恶意行为进行检测。其它隧道的检测也类似。<br>​<br>常见的建立DNS隧道的工具有：ioline、dnscat2、dns2tcp等。那相关的DNS的数据都会通过这个隧道进行传输，在建立完DNS隧道后，我们可以使用抓包工具如tcpdump专门抓取DNS 53协议的数据，这里面就可能存在其它隐含数据，而如果需要使用机器学习来进行辅助检测，那就得把流量数据考虑成文本，使用conv1d来进行基于文本的检测。流量文本可以使用tshark工具来进行转换。<br>​<br>恶意域名检测特征维度：</p>
 <ul>
