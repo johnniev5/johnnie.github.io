@@ -774,16 +774,16 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/信仰/" target="_blank">
-                        <span class="chip bg-color">信仰</span>
-                    </a>
-                    
                     <a href="/tags/人生的意义/" target="_blank">
                         <span class="chip bg-color">人生的意义</span>
                     </a>
                     
                     <a href="/tags/生与死/" target="_blank">
                         <span class="chip bg-color">生与死</span>
+                    </a>
+                    
+                    <a href="/tags/信仰/" target="_blank">
+                        <span class="chip bg-color">信仰</span>
                     </a>
                     
                     <a href="/tags/价值/" target="_blank">
@@ -851,12 +851,20 @@ DNS隧道，顾名思义，肯定是数据隐含在DNS数据包中进行传输�
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/恶意域名/" target="_blank">
-                        <span class="chip bg-color">恶意域名</span>
+                    <a href="/tags/机器学习/" target="_blank">
+                        <span class="chip bg-color">机器学习</span>
+                    </a>
+                    
+                    <a href="/tags/深度学习/" target="_blank">
+                        <span class="chip bg-color">深度学习</span>
                     </a>
                     
                     <a href="/tags/特征抽取/" target="_blank">
                         <span class="chip bg-color">特征抽取</span>
+                    </a>
+                    
+                    <a href="/tags/恶意域名/" target="_blank">
+                        <span class="chip bg-color">恶意域名</span>
                     </a>
                     
                     <a href="/tags/异常检测/" target="_blank">
@@ -865,14 +873,6 @@ DNS隧道，顾名思义，肯定是数据隐含在DNS数据包中进行传输�
                     
                     <a href="/tags/统计分析/" target="_blank">
                         <span class="chip bg-color">统计分析</span>
-                    </a>
-                    
-                    <a href="/tags/机器学习/" target="_blank">
-                        <span class="chip bg-color">机器学习</span>
-                    </a>
-                    
-                    <a href="/tags/深度学习/" target="_blank">
-                        <span class="chip bg-color">深度学习</span>
                     </a>
                     
                 </div>
@@ -1102,8 +1102,8 @@ DNS隧道，顾名思义，肯定是数据隐含在DNS数据包中进行传输�
     $(document).ready(function () {
 
         var int = setInterval(fixCount, 50);
-        var pvcountOffset = 80000;
-        var uvcountOffset = 20000;
+        var pvcountOffset = 0;
+        var uvcountOffset = 0;
 
         function fixCount() {
             if (document.getElementById("busuanzi_container_site_pv").style.display != "none") {
