@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/css" href="https://johnnie.ink/css/rss.css" ?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>空岛之恋的博客</title>
   
@@ -7,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://johnnie.ink/"/>
-  <updated>2019-08-21T12:24:41.527Z</updated>
+  <updated>2019-08-26T05:58:25.445Z</updated>
   <id>https://johnnie.ink/</id>
   
   <author>
@@ -16,6 +15,43 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>关于WebShell检测的相关特征</title>
+    <link href="https://johnnie.ink/2019/08/26/WebShell%E6%A3%80%E6%B5%8B/"/>
+    <id>https://johnnie.ink/2019/08/26/WebShell检测/</id>
+    <published>2019-08-26T05:50:10.000Z</published>
+    <updated>2019-08-26T05:58:25.445Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;div align=&quot;center&quot;&gt;
+    &lt;img src=&quot;/2019/08/26/WebShell检测/WebShell.jpg&quot; width=&quot;700&quot; height=&quot;200&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="恶意代码" scheme="https://johnnie.ink/categories/%E6%81%B6%E6%84%8F%E4%BB%A3%E7%A0%81/"/>
+    
+    
+      <category term="WebShell" scheme="https://johnnie.ink/tags/WebShell/"/>
+    
+      <category term="恶意代码" scheme="https://johnnie.ink/tags/%E6%81%B6%E6%84%8F%E4%BB%A3%E7%A0%81/"/>
+    
+      <category term="特征提取" scheme="https://johnnie.ink/tags/%E7%89%B9%E5%BE%81%E6%8F%90%E5%8F%96/"/>
+    
+      <category term="统计方法" scheme="https://johnnie.ink/tags/%E7%BB%9F%E8%AE%A1%E6%96%B9%E6%B3%95/"/>
+    
+      <category term="机器学习" scheme="https://johnnie.ink/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="深度学习" scheme="https://johnnie.ink/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
   
   <entry>
     <title>关于人生的意义</title>

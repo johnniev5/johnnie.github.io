@@ -4,6 +4,41 @@
   
     
     <entry>
+      <title>关于WebShell检测的相关特征</title>
+      <link href="/2019/08/26/WebShell%E6%A3%80%E6%B5%8B/"/>
+      <url>/2019/08/26/WebShell%E6%A3%80%E6%B5%8B/</url>
+      
+        <content type="html"><![CDATA[<div align="center">    <img src="/2019/08/26/WebShell检测/WebShell.jpg" width="700" height="200" alt="WebShell"></div><p>WebShell的检测本质上也就是恶意代码的检测</p><p>Webshell呈现出的相关特点：</p><p>（1）存在系统调用的命令执行函数，如eval、system、cmd_shell、assert等；</p><p>（2）存在系统调用的文件操作函数，如fopen、fwrite、readdir等；</p><p>（3）存在数据库操作函数，调用系统自身的存储过程来连接数据库操作；</p><p>（4）具备很深的自身隐藏性、可伪装性，可长期潜伏到web源码中；</p><p>（5）衍生变种多，可通过自定义加解密函数、利用xor、字符串反转、压缩、截断重组等方法来绕过检测；</p><p>（6）访问IP少，访问次数少，页面孤立，传统防火墙无法进行拦截，无系统操作日志；</p><p>（7）产生payload流量，在web日志中有记录产生。</p><p>WebShell检测技术：</p><ol><li>静态检测：匹配特征码，特征值，危险函数，采用的方法有哈希指纹，相似度比较等；</li><li>动态检测：执行过程中所呈现出的行为，如文件/数据库操作，网络访问等；</li><li>语法检测：分析程序语言本身存在的特性，如opcode，注释，变量，函数，字符串，程序语法结构（抽象语法树，结合NLP）等</li><li>统计检测：计算信息熵、最长单词、重合指数、压缩比，并结合机器学习方法建模进行检测。</li></ol><p>基于Web日志的统计特征：</p><ol><li>URI信息熵（主要是参数值部分）<ul><li>主要针对编码，加密数据，比如base64编码，呈现出的信息熵明显大于正常数据</li><li>会存在误报情况，有些URI中的参数值也会呈现出类似编码后的形式</li></ul></li><li>URI的访问频率<ul><li>Webshell页面一般是孤立页面，很少会被访问到，一般只是控制者访问</li><li>需排除也很少会被访问的，如后台管理，和测试维护页面</li></ul></li><li>请求头是否有referer字段<ul><li>正常页面一般都会有出入度访问的链接，入度为referer字段，出度为location字段，Webshell一般很少会有链接</li><li>但也要排除有些正常情况没有入度，如用户初次访问</li><li>因rederer字段可被修改，也存在被绕过</li></ul></li><li>统计请求中的key参数的频率<ul><li>正常web业务key参数都是固定的，而webshell发起请求时，可能会出现缺失参数</li></ul></li><li>统计请求中的key参数关联的页面<ul><li>正常页面key出现频率高，关联页面也多</li><li>登录页面，出现频率高，关联页面少</li><li>webshell则频率低，关联页面也少</li></ul></li><li>文件的重合指数IC<ul><li>加密文件的随机性变大，字符重合性指数变小，衡量文件是否加密，正常web页面文件很少会需要加密</li></ul></li><li>统计参数，参数值的长度<ul><li>比如说超过均值+3个标准差的，视为异常</li></ul></li><li>文件创建时间<ul><li>一般文件创建时间集中在部署日期，新产生的文件会存在可疑，不排除新增加</li></ul></li><li>文件的修改时间（最后一次被修改的时间）<ul><li>一般部署后不会变动，除某些配置文件</li></ul></li><li>文件权限<ul><li>文件权限的变动</li></ul></li><li>文件所有者<ul><li>异常用户</li></ul></li><li>文件中危险函数的比例<ul><li>文件操作，数据库，系统明亮执行，加解密编码类函数</li></ul></li><li>基于指纹，哈希比对<ul><li>对正常页面建立指纹库，定义阈值，计算相似值，检出异常</li><li>类似，可以计算余弦相似度，编辑距离等</li></ul></li></ol><ul><li>哈希指纹ssdeep：<a href="https://ssdeep-project.github.io/ssdeep/index.html" target="_blank" rel="noopener">https://ssdeep-project.github.io/ssdeep/index.html</a></li><li>规则匹配yara：<a href="https://yara.readthedocs.io/en/v3.8.1/" target="_blank" rel="noopener">https://yara.readthedocs.io/en/v3.8.1/</a></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> 恶意代码 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> WebShell </tag>
+            
+            <tag> 恶意代码 </tag>
+            
+            <tag> 特征提取 </tag>
+            
+            <tag> 统计方法 </tag>
+            
+            <tag> 机器学习 </tag>
+            
+            <tag> 深度学习 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>关于人生的意义</title>
       <link href="/2019/08/21/%E5%85%B3%E4%BA%8E%E4%BA%BA%E7%94%9F%E7%9A%84%E6%84%8F%E4%B9%89/"/>
       <url>/2019/08/21/%E5%85%B3%E4%BA%8E%E4%BA%BA%E7%94%9F%E7%9A%84%E6%84%8F%E4%B9%89/</url>
