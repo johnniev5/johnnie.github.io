@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://johnnie.ink/"/>
-  <updated>2019-08-26T08:39:29.285Z</updated>
+  <updated>2019-08-30T05:19:27.873Z</updated>
   <id>https://johnnie.ink/</id>
   
   <author>
@@ -15,6 +15,41 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>关于SOC的一点思考</title>
+    <link href="https://johnnie.ink/2019/08/30/SOC%E6%BC%AB%E8%B0%88/"/>
+    <id>https://johnnie.ink/2019/08/30/SOC漫谈/</id>
+    <published>2019-08-30T04:08:12.000Z</published>
+    <updated>2019-08-30T05:19:27.873Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;安全设备发展到今天，已经是眼花缭乱，功能也是花里胡哨的，或许已经过了其自身本应该有的职责与价值。今天我就跟大家来聊聊这漫天乱飞的安全设备，到底这么多功能有啥用，是否需要这么多功能，以及为什么又会出现SOC，是不是都是顺应变化呢？&lt;/p&gt;
+&lt;p&gt;下面我就来一一简单介绍下，我所
+        
+      
+    
+    </summary>
+    
+      <category term="安全运营" scheme="https://johnnie.ink/categories/%E5%AE%89%E5%85%A8%E8%BF%90%E8%90%A5/"/>
+    
+    
+      <category term="安全设备" scheme="https://johnnie.ink/tags/%E5%AE%89%E5%85%A8%E8%AE%BE%E5%A4%87/"/>
+    
+      <category term="SOC" scheme="https://johnnie.ink/tags/SOC/"/>
+    
+      <category term="安全运营" scheme="https://johnnie.ink/tags/%E5%AE%89%E5%85%A8%E8%BF%90%E8%90%A5/"/>
+    
+      <category term="机器学习" scheme="https://johnnie.ink/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="智能安全" scheme="https://johnnie.ink/tags/%E6%99%BA%E8%83%BD%E5%AE%89%E5%85%A8/"/>
+    
+  </entry>
   
   <entry>
     <title>关于WebShell检测的相关特征</title>
@@ -39,6 +74,8 @@
       <category term="恶意代码" scheme="https://johnnie.ink/categories/%E6%81%B6%E6%84%8F%E4%BB%A3%E7%A0%81/"/>
     
     
+      <category term="机器学习" scheme="https://johnnie.ink/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    
       <category term="WebShell" scheme="https://johnnie.ink/tags/WebShell/"/>
     
       <category term="恶意代码" scheme="https://johnnie.ink/tags/%E6%81%B6%E6%84%8F%E4%BB%A3%E7%A0%81/"/>
@@ -46,8 +83,6 @@
       <category term="特征提取" scheme="https://johnnie.ink/tags/%E7%89%B9%E5%BE%81%E6%8F%90%E5%8F%96/"/>
     
       <category term="统计方法" scheme="https://johnnie.ink/tags/%E7%BB%9F%E8%AE%A1%E6%96%B9%E6%B3%95/"/>
-    
-      <category term="机器学习" scheme="https://johnnie.ink/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
     
       <category term="深度学习" scheme="https://johnnie.ink/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
     
@@ -115,8 +150,6 @@
       <category term="工作" scheme="https://johnnie.ink/categories/%E5%B7%A5%E4%BD%9C/"/>
     
     
-      <category term="人生的意义" scheme="https://johnnie.ink/tags/%E4%BA%BA%E7%94%9F%E7%9A%84%E6%84%8F%E4%B9%89/"/>
-    
       <category term="工作" scheme="https://johnnie.ink/tags/%E5%B7%A5%E4%BD%9C/"/>
     
       <category term="兴趣" scheme="https://johnnie.ink/tags/%E5%85%B4%E8%B6%A3/"/>
@@ -128,6 +161,8 @@
       <category term="价值观" scheme="https://johnnie.ink/tags/%E4%BB%B7%E5%80%BC%E8%A7%82/"/>
     
       <category term="世界观" scheme="https://johnnie.ink/tags/%E4%B8%96%E7%95%8C%E8%A7%82/"/>
+    
+      <category term="人生的意义" scheme="https://johnnie.ink/tags/%E4%BA%BA%E7%94%9F%E7%9A%84%E6%84%8F%E4%B9%89/"/>
     
   </entry>
   
