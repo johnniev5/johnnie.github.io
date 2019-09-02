@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://johnnie.ink/"/>
-  <updated>2019-09-02T16:34:08.175Z</updated>
+  <updated>2019-09-02T16:35:01.156Z</updated>
   <id>https://johnnie.ink/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://johnnie.ink/2019/09/02/SOC%E6%80%9D%E8%B7%AF/"/>
     <id>https://johnnie.ink/2019/09/02/SOC思路/</id>
     <published>2019-09-02T15:08:30.000Z</published>
-    <updated>2019-09-02T16:34:08.175Z</updated>
+    <updated>2019-09-02T16:35:01.156Z</updated>
     
     <summary type="html">
     
@@ -50,8 +50,6 @@
       <category term="攻击链路" scheme="https://johnnie.ink/tags/%E6%94%BB%E5%87%BB%E9%93%BE%E8%B7%AF/"/>
     
       <category term="机器学习" scheme="https://johnnie.ink/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
-    
-      <category term="聚类" scheme="https://johnnie.ink/tags/%E8%81%9A%E7%B1%BB/"/>
     
   </entry>
   

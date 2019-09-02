@@ -280,7 +280,7 @@
 <script src="/libs/cryptojs/crypto-js.min.js"></script>
 <script>
     (function() {
-        let pwd = 'ntd51sa';
+        let pwd = '';
         if (pwd && pwd.length > 0) {
             if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
                 alert('密码错误，将返回主页！');
@@ -432,10 +432,6 @@
                         
                             <a href="/tags/机器学习/" target="_blank">
                                 <span class="chip bg-color">机器学习</span>
-                            </a>
-                        
-                            <a href="/tags/聚类/" target="_blank">
-                                <span class="chip bg-color">聚类</span>
                             </a>
                         
                     </div>
@@ -833,10 +829,6 @@
                     
                     <a href="/tags/机器学习/" target="_blank">
                         <span class="chip bg-color">机器学习</span>
-                    </a>
-                    
-                    <a href="/tags/聚类/" target="_blank">
-                        <span class="chip bg-color">聚类</span>
                     </a>
                     
                 </div>
