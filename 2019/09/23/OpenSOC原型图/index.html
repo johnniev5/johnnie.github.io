@@ -4,15 +4,10 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="关于SOC的详细思路, 网络安全, 机器学习, 深度学习, 自然语言, 生活感悟等">
+    <meta name="keywords" content="OpenSOC原型图, 网络安全, 机器学习, 深度学习, 自然语言, 生活感悟等">
     <meta name="baidu-site-verification" content="fmlEuI34ir">
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48">
-    <meta name="description" content="
-    
-
-
-
-系统名：变更名称报警，一般只有管理员才拥有修改主机名权限，此处名称作为设备的唯一标识，相对重要，也方便在发生故障，或安全事件时，能够快速定位故障点。此处就需要严格控制能够修改主机名权限的人员，另外，也可结合智能引擎识别恶意">
+    <meta name="description" content="好久没更新了，最近在思考着如何来完成自己挖的坑！要完成这个OpenSOC，确实不容易，从原图设计，前端逻辑，到后端逻辑，架构选型等等，好多事情要做，难的不是业务本身，而是如何选好架构，如何将这些都完美低拼接到一起，这就要多花些时间来思考了！">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -20,7 +15,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>关于SOC的详细思路 | 空岛之恋的博客</title>
+    <title>OpenSOC原型图 | 空岛之恋的博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -293,13 +288,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/10.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/19.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        关于SOC的详细思路
+                        OpenSOC原型图
                     </div>
                 </div>
             </div>
@@ -410,6 +405,18 @@
                     
                     <div class="article-tag">
                         
+                            <a href="/tags/原型图/" target="_blank">
+                                <span class="chip bg-color">原型图</span>
+                            </a>
+                        
+                            <a href="/tags/MockPlus/" target="_blank">
+                                <span class="chip bg-color">MockPlus</span>
+                            </a>
+                        
+                            <a href="/tags/OpenSOC/" target="_blank">
+                                <span class="chip bg-color">OpenSOC</span>
+                            </a>
+                        
                             <a href="/tags/运维安全/" target="_blank">
                                 <span class="chip bg-color">运维安全</span>
                             </a>
@@ -418,35 +425,10 @@
                                 <span class="chip bg-color">安全运营</span>
                             </a>
                         
-                            <a href="/tags/安全设备/" target="_blank">
-                                <span class="chip bg-color">安全设备</span>
-                            </a>
-                        
-                            <a href="/tags/安全日志/" target="_blank">
-                                <span class="chip bg-color">安全日志</span>
-                            </a>
-                        
-                            <a href="/tags/攻击链路/" target="_blank">
-                                <span class="chip bg-color">攻击链路</span>
-                            </a>
-                        
-                            <a href="/tags/机器学习/" target="_blank">
-                                <span class="chip bg-color">机器学习</span>
-                            </a>
-                        
                     </div>
                     
                 </div>
                 <div class="col s5 right-align">
-                    
-                    <div class="post-cate">
-                        <i class="fa fa-bookmark fa-fw icon-category"></i>
-                        
-                            <a href="/categories/安全运营/" class="post-category" target="_blank">
-                                安全运营
-                            </a>
-                        
-                    </div>
                     
                 </div>
             </div>
@@ -454,7 +436,7 @@
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-09-02
+                    2019-09-23
                 </div>
 
                 <div class="post-author info-break-policy">
@@ -468,14 +450,14 @@
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        2k
+                        176
                     </div>
                     
 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                        6 分
+                        1 分
                     </div>
                     
                 
@@ -491,55 +473,10 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <div align="center">
-    <img src="/2019/09/02/SOC思路/SOC.png" width="700" height="200" alt="SOC">
+                <p>好久没更新了，最近在思考着如何来完成自己挖的坑！要完成这个OpenSOC，确实不容易，从原图设计，前端逻辑，到后端逻辑，架构选型等等，好多事情要做，难的不是业务本身，而是如何选好架构，如何将这些都完美低拼接到一起，这就要多花些时间来思考了！！！哎，毕竟不是做前端，主要精力是后端和数据平台实现，就凑合着看吧，主要是有了模型图，也就有了业务逻辑，要实现的功能，往后一点点实现，也就有了明确目标，怎么地，都得有始有终啊！</p>
+<div align="center">
+    <img src="/2019/09/23/OpenSOC原型图/首页.png" alt="首页">
 </div>
-
-<ul>
-<li>系统名：变更名称报警，一般只有管理员才拥有修改主机名权限，此处名称作为设备的唯一标识，相对重要，也方便在发生故障，或安全事件时，能够快速定位故障点。此处就需要严格控制能够修改主机名权限的人员，另外，也可结合智能引擎识别恶意用户给出报警，减低误报率。</li>
-<li>设备类型：分网络设备，安全设备，服务器等，如防火墙，WAF，IDS等，用于标识设备功能，在故障发生时，以防止忘记只有系统名标识该设备所具有的功能。</li>
-<li>分组类型：网络组，安全组，服务组，业务组等</li>
-<li>操作系统版本：无论网络设备，还是服务器等，都会有相应的支撑系统，这里列出操作系统的版本以显示相应版本是否存在高危漏洞，同时，期望给出相应版本的升级建议。操作系统的版本随意变更也希望给出警告，也需要严格控制系统补丁更新操作的权限。</li>
-<li>固件版本：一般是硬件BIOS版本信息，这个信息容易忽略，也非常关键，也需要加入关键补丁修复建议，对于版本的变更也应给出告警。</li>
-<li>IP地址：有些设备会有多个IP地址，应给出区分。IP地址也不应该随意变更，变更会报警。</li>
-<li>系统运行时间：可以知道机器是否出现过宕机等故障</li>
-<li>CPU类型：包括频率、物理核数和逻辑核数</li>
-<li>CPU使用频率：能够按逻辑核数显示出其对应的频率，可以显示1min,5mins,15mins的情况，设置一阈值，比如达到80%使用报警，持续达到100%使用则持续报警</li>
-<li>CPU物理故障：可能存在的物理故障，影响性能</li>
-<li>内存大小与使用大小比例：实时获取信息，超过50%告警，超过80%高危报警，可以显示1min,5mins,15mins的情况</li>
-<li>虚拟内存大小与使用大小比例：同上</li>
-<li>物理内存故障：能够显示设备上内存大小，条数，存在故障的内存信息</li>
-<li>网络端口状态信息：down or up</li>
-<li>网络端口进出数据包信息：数据包统计，字节统计</li>
-<li>进出口流量状态：各个端口流量状态图，可以显示1min,5mins,15mins的情况</li>
-<li>按协议/IP地址/端口/地理位置统计信息：需要结合外部信息</li>
-<li>网卡故障：显示网卡信息，能够显示故障网卡</li>
-<li>磁盘大小与使用比例：超过80%报警，可以显示多个分区情况</li>
-<li>磁盘故障：物理故障和逻辑故障</li>
-<li>进程信息：默认显示TOP5高CPU、内存、网络使用进程，也可以完全显示。显示信息有CPU占用、内存占用、网络资源、端口、协议类型、CPU使用时间等</li>
-<li>系统核心进程监控：可以自定义添加需要监控的进程信息，比如某些系统核心进程和服务进程，发生进程注入攻击时，或异常使用资源时都能够给出报警。</li>
-<li>自定义需要监控的文件：比如文件访问，文件修改，文件权限变更，包括用户拥有者和读写执行权限</li>
-<li>用户信息：用户创建、修改、删除信息</li>
-<li>用户权限：权限变更，操作权限，系统权限，如资源使用，文件权限，登录权限等；</li>
-<li>用户登录：用户登录成功，失败，只显示关键信息</li>
-<li>补丁信息：是否存在高危漏洞，以及补丁修复情况</li>
-</ul>
-<p>以上功能可以分标签自定义设置要监控项目实现，并能够按照分组进行分类需要监控的项目，会给出默认监控项，可以勾选需要监控的项。</p>
-<p>同时，对于以上有告警的监控项目，能够实现设置维护时间，按照人，时间，事件，做什么等设置维护，并记录这些维护事件。</p>
-<p>以上信息如可以都分别存储到数据库，事件保留时间为180天为计算，实行回滚覆盖。</p>
-<p>这是第一个大屏所要显示的实时信息，主要是运维为主的安全监控。</p>
-<p>第二个大屏要展示的是各个设备上收集到的关键日志信息，比如防火墙上的过滤日志，IDS上的拦截日志，WAF上的过滤日志，操作系统上的执行日志等，这些日志，也是我们要提炼的，防火墙和IDS上的主要是以异常流量为主的过滤，以TCP/UDP协议为主，这里可以展示的统计信息有：</p>
-<ol>
-<li>TOP10的拦截IP，以及其地理位置，以及存在的设备名</li>
-<li>TOP10的拦截域名，以及其地理位置，以及存在的设备名</li>
-<li>TOP10的攻击类型，主要以WEB攻击为主，以及存在的设备名</li>
-<li>TOP10的DDOS攻击类型，以及所影响的设备</li>
-<li>TOP10程序执行的命令，恶意关联的，如数据库操作，系统越权等</li>
-</ol>
-<p>这边的最重要的职责是通过异常发现能够发现设备中存在的漏报和误报，这是一种事后反哺事先的辅助措施。</p>
-<p>除去内网IP和VPN敏感操作留下的日志，我们需要通过用户行为收集各个运维操作者的行为特征，当出现异常对象，异常操作时，我们期望可以发现内鬼和外部攻击，因单纯地看外部攻击，很多只要通过基于规则和规则的设备监控可以拦截和发现，而这种情况是无法防御内鬼的。同时基于规则的过滤，都很容易被绕过，无论是防火墙，还是WAF等设备，我们可以使用聚类，聚类出异常流量，聚类特征可以通过观察，日志属于时间序列学习，要设定好时间分片，聚类出的异常流量，再来一波分析，对于标注信息，我们可以基于各个设备上的判断，比如对于IP，更多地是基于外部威胁情报，而域名检测，可以使用统计特征，HTTP(s)的流量检测可以基于攻击类型，程序执行日志，比如webshell，是基于程序文件来提特征等，无论哪种类型的检测，思路都是一样的，先检出异常流量，再细分攻击类型，确定为恶意后，我们可以跟设备检测的进行对比，再这里给出误报率和漏报率，以及哪些被漏报和误报，同时，能够反哺到设备进行人为修补。以此不断加强设备的防御能力。</p>
-<p>第三个大屏期望可以显示的是实时攻击节点告警，和攻击链路显示，当被入侵时，能够实现显示攻击的链路，以及给出告警提醒监控人员，及时响应，每个节点都是以设备形式呈现，点击可以显示设备的详细信息，事中、事后的攻击链路梳理，能够实时呈现出哪个节点存在的防御不足，如何实现这个攻击的链路相对准确的显示呢，这个就是通过上面说到的要求设备和日志不断加强自身的检出能力，那么就可以通过比如IP地址在各个设备上的存在来绘制出攻击链路。</p>
-<p>第四个大屏可以给出图关联，比如给出任意域名，IP或设备都能够，实现其信息的溯源关联，如域名注册信息，是否被用作僵尸网络等。</p>
 
             </div>
             <hr/>
@@ -698,9 +635,9 @@
             <br/>
             <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text"
                   property="dct:title" rel="dct:type">
-                    《关于SOC的详细思路》
+                    《OpenSOC原型图》
                 </span> 由
-            <a xmlns:cc="http://creativecommons.org/ns#" href="/2019/09/02/SOC思路/" property="cc:attributionName"
+            <a xmlns:cc="http://creativecommons.org/ns#" href="/2019/09/23/OpenSOC原型图/" property="cc:attributionName"
                rel="cc:attributionURL">
                 空岛之恋
             </a> 采用
@@ -741,7 +678,7 @@
         repo: 'johnniev5.github.io',
         owner: 'johnniev5',
         admin: "johnniev5",
-        id: '2019/09/02/SOC思路/',
+        id: '2019/09/23/OpenSOC原型图/',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -762,9 +699,10 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2019/09/23/OpenSOC原型图/">
                     <div class="card-image">
@@ -782,14 +720,15 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-09-23
-                        </span>
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-09-23
+                            </span>
                         <span class="publish-author">
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -824,25 +763,29 @@
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2019/08/30/SOC漫谈/">
+                <a href="/2019/09/02/SOC思路/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="关于SOC的一点思考">
+                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="关于SOC的详细思路">
                         
-                        <span class="card-title">关于SOC的一点思考</span>
+                        <span class="card-title">关于SOC的详细思路</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            安全设备发展到今天，已经是眼花缭乱，功能也是花里胡哨的，或许已经过了其自身本应该有的职责与价值。今天我就跟大家来聊聊这漫天乱飞的安全设备，到底这么多功能有啥用，是否需要这么多功能，以及为什么又会出现SOC，是不是都是顺应变化呢？
-下面我就来
+                            
+    
+
+
+
+系统名：变更名称报警，一般只有管理员才拥有修改主机名权限，此处名称作为设备的唯一标识，相对重要，也方便在发生故障，或安全事件时，能够快速定位故障点。此处就需要严格控制能够修改主机名权限的人员，另外，也可结合智能引擎识别恶意
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-08-30
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-09-02
                             </span>
                         <span class="publish-author">
                             
@@ -859,6 +802,10 @@
                 
                 <div class="card-action article-tags">
                     
+                    <a href="/tags/运维安全/" target="_blank">
+                        <span class="chip bg-color">运维安全</span>
+                    </a>
+                    
                     <a href="/tags/安全运营/" target="_blank">
                         <span class="chip bg-color">安全运营</span>
                     </a>
@@ -867,16 +814,16 @@
                         <span class="chip bg-color">安全设备</span>
                     </a>
                     
+                    <a href="/tags/安全日志/" target="_blank">
+                        <span class="chip bg-color">安全日志</span>
+                    </a>
+                    
+                    <a href="/tags/攻击链路/" target="_blank">
+                        <span class="chip bg-color">攻击链路</span>
+                    </a>
+                    
                     <a href="/tags/机器学习/" target="_blank">
                         <span class="chip bg-color">机器学习</span>
-                    </a>
-                    
-                    <a href="/tags/SOC/" target="_blank">
-                        <span class="chip bg-color">SOC</span>
-                    </a>
-                    
-                    <a href="/tags/智能安全/" target="_blank">
-                        <span class="chip bg-color">智能安全</span>
                     </a>
                     
                 </div>
