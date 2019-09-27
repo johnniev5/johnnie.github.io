@@ -57,13 +57,13 @@
             
             <tag> 安全运营 </tag>
             
-            <tag> 机器学习 </tag>
-            
             <tag> 安全设备 </tag>
             
             <tag> 安全日志 </tag>
             
             <tag> 攻击链路 </tag>
+            
+            <tag> 机器学习 </tag>
             
         </tags>
       
@@ -90,9 +90,9 @@
             
             <tag> 安全运营 </tag>
             
-            <tag> 机器学习 </tag>
-            
             <tag> 安全设备 </tag>
+            
+            <tag> 机器学习 </tag>
             
             <tag> SOC </tag>
             
@@ -121,6 +121,8 @@
       
         <tags>
             
+            <tag> 机器学习 </tag>
+            
             <tag> WebShell </tag>
             
             <tag> 恶意代码 </tag>
@@ -128,8 +130,6 @@
             <tag> 特征提取 </tag>
             
             <tag> 统计方法 </tag>
-            
-            <tag> 机器学习 </tag>
             
             <tag> 深度学习 </tag>
             
@@ -156,11 +156,11 @@
       
         <tags>
             
+            <tag> 信仰 </tag>
+            
             <tag> 人生的意义 </tag>
             
             <tag> 生与死 </tag>
-            
-            <tag> 信仰 </tag>
             
             <tag> 价值 </tag>
             
@@ -234,9 +234,9 @@
             
             <tag> 深度学习 </tag>
             
-            <tag> 恶意域名 </tag>
-            
             <tag> 特征抽取 </tag>
+            
+            <tag> 恶意域名 </tag>
             
             <tag> 异常检测 </tag>
             
@@ -265,8 +265,6 @@
       
         <tags>
             
-            <tag> 信仰 </tag>
-            
             <tag> 爱情 </tag>
             
             <tag> 生命 </tag>
@@ -276,6 +274,8 @@
             <tag> 单纯 </tag>
             
             <tag> 无私 </tag>
+            
+            <tag> 信仰 </tag>
             
             <tag> 存在感 </tag>
             
