@@ -79,11 +79,11 @@
     
       <category term="安全设备" scheme="https://johnnie.ink/tags/%E5%AE%89%E5%85%A8%E8%AE%BE%E5%A4%87/"/>
     
-      <category term="机器学习" scheme="https://johnnie.ink/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
-    
       <category term="安全日志" scheme="https://johnnie.ink/tags/%E5%AE%89%E5%85%A8%E6%97%A5%E5%BF%97/"/>
     
       <category term="攻击链路" scheme="https://johnnie.ink/tags/%E6%94%BB%E5%87%BB%E9%93%BE%E8%B7%AF/"/>
+    
+      <category term="机器学习" scheme="https://johnnie.ink/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
     
   </entry>
   
@@ -114,9 +114,9 @@
     
       <category term="安全设备" scheme="https://johnnie.ink/tags/%E5%AE%89%E5%85%A8%E8%AE%BE%E5%A4%87/"/>
     
-      <category term="SOC" scheme="https://johnnie.ink/tags/SOC/"/>
-    
       <category term="机器学习" scheme="https://johnnie.ink/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="SOC" scheme="https://johnnie.ink/tags/SOC/"/>
     
       <category term="智能安全" scheme="https://johnnie.ink/tags/%E6%99%BA%E8%83%BD%E5%AE%89%E5%85%A8/"/>
     
