@@ -77,13 +77,13 @@
     
       <category term="安全运营" scheme="https://johnnie.ink/tags/%E5%AE%89%E5%85%A8%E8%BF%90%E8%90%A5/"/>
     
+      <category term="机器学习" scheme="https://johnnie.ink/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    
       <category term="安全设备" scheme="https://johnnie.ink/tags/%E5%AE%89%E5%85%A8%E8%AE%BE%E5%A4%87/"/>
     
       <category term="安全日志" scheme="https://johnnie.ink/tags/%E5%AE%89%E5%85%A8%E6%97%A5%E5%BF%97/"/>
     
       <category term="攻击链路" scheme="https://johnnie.ink/tags/%E6%94%BB%E5%87%BB%E9%93%BE%E8%B7%AF/"/>
-    
-      <category term="机器学习" scheme="https://johnnie.ink/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
     
   </entry>
   
@@ -112,9 +112,9 @@
     
       <category term="安全运营" scheme="https://johnnie.ink/tags/%E5%AE%89%E5%85%A8%E8%BF%90%E8%90%A5/"/>
     
-      <category term="安全设备" scheme="https://johnnie.ink/tags/%E5%AE%89%E5%85%A8%E8%AE%BE%E5%A4%87/"/>
-    
       <category term="机器学习" scheme="https://johnnie.ink/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="安全设备" scheme="https://johnnie.ink/tags/%E5%AE%89%E5%85%A8%E8%AE%BE%E5%A4%87/"/>
     
       <category term="SOC" scheme="https://johnnie.ink/tags/SOC/"/>
     
@@ -145,8 +145,6 @@
       <category term="恶意代码" scheme="https://johnnie.ink/categories/%E6%81%B6%E6%84%8F%E4%BB%A3%E7%A0%81/"/>
     
     
-      <category term="机器学习" scheme="https://johnnie.ink/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
-    
       <category term="WebShell" scheme="https://johnnie.ink/tags/WebShell/"/>
     
       <category term="恶意代码" scheme="https://johnnie.ink/tags/%E6%81%B6%E6%84%8F%E4%BB%A3%E7%A0%81/"/>
@@ -154,6 +152,8 @@
       <category term="特征提取" scheme="https://johnnie.ink/tags/%E7%89%B9%E5%BE%81%E6%8F%90%E5%8F%96/"/>
     
       <category term="统计方法" scheme="https://johnnie.ink/tags/%E7%BB%9F%E8%AE%A1%E6%96%B9%E6%B3%95/"/>
+    
+      <category term="机器学习" scheme="https://johnnie.ink/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
     
       <category term="深度学习" scheme="https://johnnie.ink/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
     
@@ -182,11 +182,11 @@
       <category term="人生" scheme="https://johnnie.ink/categories/%E4%BA%BA%E7%94%9F/"/>
     
     
+      <category term="信仰" scheme="https://johnnie.ink/tags/%E4%BF%A1%E4%BB%B0/"/>
+    
       <category term="人生的意义" scheme="https://johnnie.ink/tags/%E4%BA%BA%E7%94%9F%E7%9A%84%E6%84%8F%E4%B9%89/"/>
     
       <category term="生与死" scheme="https://johnnie.ink/tags/%E7%94%9F%E4%B8%8E%E6%AD%BB/"/>
-    
-      <category term="信仰" scheme="https://johnnie.ink/tags/%E4%BF%A1%E4%BB%B0/"/>
     
       <category term="价值" scheme="https://johnnie.ink/tags/%E4%BB%B7%E5%80%BC/"/>
     
@@ -303,8 +303,6 @@
       <category term="爱情" scheme="https://johnnie.ink/categories/%E7%88%B1%E6%83%85/"/>
     
     
-      <category term="信仰" scheme="https://johnnie.ink/tags/%E4%BF%A1%E4%BB%B0/"/>
-    
       <category term="爱情" scheme="https://johnnie.ink/tags/%E7%88%B1%E6%83%85/"/>
     
       <category term="生命" scheme="https://johnnie.ink/tags/%E7%94%9F%E5%91%BD/"/>
@@ -314,6 +312,8 @@
       <category term="单纯" scheme="https://johnnie.ink/tags/%E5%8D%95%E7%BA%AF/"/>
     
       <category term="无私" scheme="https://johnnie.ink/tags/%E6%97%A0%E7%A7%81/"/>
+    
+      <category term="信仰" scheme="https://johnnie.ink/tags/%E4%BF%A1%E4%BB%B0/"/>
     
       <category term="存在感" scheme="https://johnnie.ink/tags/%E5%AD%98%E5%9C%A8%E6%84%9F/"/>
     
