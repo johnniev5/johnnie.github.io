@@ -8,7 +8,7 @@
       <link href="/2019/09/23/OpenSOC%E5%8E%9F%E5%9E%8B%E5%9B%BE/"/>
       <url>/2019/09/23/OpenSOC%E5%8E%9F%E5%9E%8B%E5%9B%BE/</url>
       
-        <content type="html"><![CDATA[<p>好久没更新了，最近在思考着如何来完成自己挖的坑！要完成这个OpenSOC，确实不容易，从原图设计，前端逻辑，到后端逻辑，架构选型等等，好多事情要做，难的不是业务本身，而是如何选好架构，如何将这些都完美地拼接到一起，这就要多花些时间来思考了！！！哎，毕竟不是做前端，主要精力是后端和数据平台实现，就凑合着看吧，主要是有了模型图，也就有了业务逻辑，要实现的功能，往后一点点实现，也就有了明确目标，怎么得，都得有始有终啊！</p><div align="center">    <img src="/2019/09/23/OpenSOC原型图/首页.png" alt="首页">    <img src="/2019/09/23/OpenSOC原型图/首页告警.png" alt="首页告警">    <img src="/2019/09/23/OpenSOC原型图/首页添加.png" alt="首页添加">    <img src="/2019/09/23/OpenSOC原型图/指标设置.png" alt="指标设置">    <img src="/2019/09/23/OpenSOC原型图/首页全屏.png" alt="首页全屏">    <img src="/2019/09/23/OpenSOC原型图/比较.png" alt="比较">    <img src="/2019/09/23/OpenSOC原型图/单项全屏.png" alt="单项全屏">    <img src="/2019/09/23/OpenSOC原型图/更新.png" alt="更新">    <img src="/2019/09/23/OpenSOC原型图/固件.png" alt="固件">    <img src="/2019/09/23/OpenSOC原型图/漏洞.png" alt="漏洞">    <img src="/2019/09/23/OpenSOC原型图/CPU信息.png" alt="CPU信息">    <img src="/2019/09/23/OpenSOC原型图/内存信息.png" alt="内存信息">    <img src="/2019/09/23/OpenSOC原型图/网络信息.png" alt="网络信息">    <img src="/2019/09/23/OpenSOC原型图/进程信息.png" alt="进程信息">    <img src="/2019/09/23/OpenSOC原型图/进程全屏.png" alt="进程全屏">    <img src="/2019/09/23/OpenSOC原型图/文件信息.png" alt="文件信息">    <img src="/2019/09/23/OpenSOC原型图/文件全屏.png" alt="文件全屏">    <img src="/2019/09/23/OpenSOC原型图/用户信息.png" alt="用户信息">    <img src="/2019/09/23/OpenSOC原型图/用户全屏.png" alt="用户全屏">    <img src="/2019/09/23/OpenSOC原型图/详细列表.png" alt="详细列表">    <img src="/2019/09/23/OpenSOC原型图/附页添加.png" alt="附页添加">    <img src="/2019/09/23/OpenSOC原型图/系统组.png" alt="系统组">    <img src="/2019/09/23/OpenSOC原型图/网络组.png" alt="网络组">    <img src="/2019/09/23/OpenSOC原型图/安全组.png" alt="安全组">    <img src="/2019/09/23/OpenSOC原型图/业务组.png" alt="业务组">    <img src="/2019/09/23/OpenSOC原型图/单项详情.png" alt="单项详情">    <img src="/2019/09/23/OpenSOC原型图/系统组告警.png" alt="系统组告警">    <img src="/2019/09/23/OpenSOC原型图/网络组告警.png" alt="网络组告警">    <img src="/2019/09/23/OpenSOC原型图/安全组告警.png" alt="安全组告警">    <img src="/2019/09/23/OpenSOC原型图/业务组告警.png" alt="业务组告警">    <img src="/2019/09/23/OpenSOC原型图/日志分析.png" alt="日志分析">    <img src="/2019/09/23/OpenSOC原型图/单项添加.png" alt="单项添加">    <img src="/2019/09/23/OpenSOC原型图/全屏分析.png" alt="全屏分析">    <img src="/2019/09/23/OpenSOC原型图/单项分析.png" alt="单项分析">    <img src="/2019/09/23/OpenSOC原型图/拓扑节点.png" alt="拓扑节点">    <img src="/2019/09/23/OpenSOC原型图/攻击节点.png" alt="攻击节点">    <img src="/2019/09/23/OpenSOC原型图/群集列表.png" alt="群集列表">    <img src="/2019/09/23/OpenSOC原型图/异常事件链路分析.png" alt="异常事件链路分析">    <img src="/2019/09/23/OpenSOC原型图/关联分析.png" alt="关联分析">    <img src="/2019/09/23/OpenSOC原型图/创建用户.png" alt="创建用户">    <img src="/2019/09/23/OpenSOC原型图/修改信息.png" alt="修改信息">    <img src="/2019/09/23/OpenSOC原型图/登录.png" alt="登录">    <img src="/2019/09/23/OpenSOC原型图/设置维护.png" alt="设置维护">    <img src="/2019/09/23/OpenSOC原型图/审核.png" alt="审核"></div>]]></content>
+        <content type="html"><![CDATA[<p>好久没更新了，最近在思考着如何来完成自己挖的坑！要完成这个OpenSOC，确实不容易，从原图设计，前端逻辑，到后端逻辑，架构选型等等，好多事情要做，难的不是业务本身，而是如何选好架构，如何将这些都完美地拼接到一起，这就要多花些时间来思考了！！！哎，毕竟不是做前端，主要精力是后端和数据平台实现，就凑合着看吧，主要是有了模型图，也就有了业务逻辑，要实现的功能，往后一点点实现，也就有了明确目标，怎么得，都得有始有终啊！</p><div align="center">    <img src="/2019/09/23/OpenSOC原型图/首页.png" alt="首页">    <img src="/2019/09/23/OpenSOC原型图/首页告警.png" alt="首页告警">    <img src="/2019/09/23/OpenSOC原型图/首页添加.png" alt="首页添加">    <img src="/2019/09/23/OpenSOC原型图/指标设置.png" alt="指标设置">    <img src="/2019/09/23/OpenSOC原型图/首页全屏.png" alt="首页全屏">    <img src="/2019/09/23/OpenSOC原型图/比较.png" alt="比较">    <img src="/2019/09/23/OpenSOC原型图/单项全屏.png" alt="单项全屏">    <img src="/2019/09/23/OpenSOC原型图/更新.png" alt="更新">    <img src="/2019/09/23/OpenSOC原型图/固件.png" alt="固件">    <img src="/2019/09/23/OpenSOC原型图/漏洞.png" alt="漏洞">    <img src="/2019/09/23/OpenSOC原型图/CPU信息.png" alt="CPU信息">    <img src="/2019/09/23/OpenSOC原型图/内存信息.png" alt="内存信息">    <img src="/2019/09/23/OpenSOC原型图/网络信息.png" alt="网络信息">    <img src="/2019/09/23/OpenSOC原型图/进程信息.png" alt="进程信息">    <img src="/2019/09/23/OpenSOC原型图/进程全屏.png" alt="进程全屏">    <img src="/2019/09/23/OpenSOC原型图/文件信息.png" alt="文件信息">    <img src="/2019/09/23/OpenSOC原型图/文件全屏.png" alt="文件全屏">    <img src="/2019/09/23/OpenSOC原型图/用户信息.png" alt="用户信息">    <img src="/2019/09/23/OpenSOC原型图/用户全屏.png" alt="用户全屏">    <img src="/2019/09/23/OpenSOC原型图/详细列表.png" alt="详细列表">    <img src="/2019/09/23/OpenSOC原型图/附页添加.png" alt="附页添加">    <img src="/2019/09/23/OpenSOC原型图/系统组.png" alt="系统组">    <img src="/2019/09/23/OpenSOC原型图/网络组.png" alt="网络组">    <img src="/2019/09/23/OpenSOC原型图/安全组.png" alt="安全组">    <img src="/2019/09/23/OpenSOC原型图/业务组.png" alt="业务组">    <img src="/2019/09/23/OpenSOC原型图/单项详情.png" alt="单项详情">    <img src="/2019/09/23/OpenSOC原型图/系统组告警.png" alt="系统组告警">    <img src="/2019/09/23/OpenSOC原型图/网络组告警.png" alt="网络组告警">    <img src="/2019/09/23/OpenSOC原型图/安全组告警.png" alt="安全组告警">    <img src="/2019/09/23/OpenSOC原型图/业务组告警.png" alt="业务组告警">    <img src="/2019/09/23/OpenSOC原型图/日志分析.png" alt="日志分析">    <img src="/2019/09/23/OpenSOC原型图/单项添加.png" alt="单项添加">    <img src="/2019/09/23/OpenSOC原型图/全屏分析.png" alt="全屏分析">    <img src="/2019/09/23/OpenSOC原型图/单项分析.png" alt="单项分析">    <img src="/2019/09/23/OpenSOC原型图/拓扑节点.png" alt="拓扑节点">    <img src="/2019/09/23/OpenSOC原型图/攻击节点.png" alt="攻击节点">    <img src="/2019/09/23/OpenSOC原型图/群集列表.png" alt="群集列表">    <img src="/2019/09/23/OpenSOC原型图/异常事件链路分析.png" alt="异常事件链路分析">    <img src="/2019/09/23/OpenSOC原型图/关联分析.png" alt="关联分析">    <img src="/2019/09/23/OpenSOC原型图/创建用户.png" alt="创建用户">    <img src="/2019/09/23/OpenSOC原型图/用户设置.png" alt="用户设置">    <img src="/2019/09/23/OpenSOC原型图/登录.png" alt="登录">    <img src="/2019/09/23/OpenSOC原型图/设置维护.png" alt="设置维护">    <img src="/2019/09/23/OpenSOC原型图/审核.png" alt="审核"></div>]]></content>
       
       
       <categories>
@@ -57,13 +57,13 @@
             
             <tag> 安全运营 </tag>
             
+            <tag> 机器学习 </tag>
+            
             <tag> 安全设备 </tag>
             
             <tag> 安全日志 </tag>
             
             <tag> 攻击链路 </tag>
-            
-            <tag> 机器学习 </tag>
             
         </tags>
       
@@ -90,9 +90,9 @@
             
             <tag> 安全运营 </tag>
             
-            <tag> 安全设备 </tag>
-            
             <tag> 机器学习 </tag>
+            
+            <tag> 安全设备 </tag>
             
             <tag> SOC </tag>
             
@@ -121,8 +121,6 @@
       
         <tags>
             
-            <tag> 机器学习 </tag>
-            
             <tag> WebShell </tag>
             
             <tag> 恶意代码 </tag>
@@ -130,6 +128,8 @@
             <tag> 特征提取 </tag>
             
             <tag> 统计方法 </tag>
+            
+            <tag> 机器学习 </tag>
             
             <tag> 深度学习 </tag>
             
@@ -156,11 +156,11 @@
       
         <tags>
             
-            <tag> 信仰 </tag>
-            
             <tag> 人生的意义 </tag>
             
             <tag> 生与死 </tag>
+            
+            <tag> 信仰 </tag>
             
             <tag> 价值 </tag>
             
@@ -234,9 +234,9 @@
             
             <tag> 深度学习 </tag>
             
-            <tag> 恶意域名 </tag>
-            
             <tag> 特征抽取 </tag>
+            
+            <tag> 恶意域名 </tag>
             
             <tag> 异常检测 </tag>
             
@@ -265,6 +265,8 @@
       
         <tags>
             
+            <tag> 信仰 </tag>
+            
             <tag> 爱情 </tag>
             
             <tag> 生命 </tag>
@@ -274,8 +276,6 @@
             <tag> 单纯 </tag>
             
             <tag> 无私 </tag>
-            
-            <tag> 信仰 </tag>
             
             <tag> 存在感 </tag>
             
