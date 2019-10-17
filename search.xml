@@ -20,15 +20,15 @@
       
         <tags>
             
+            <tag> 安全运营 </tag>
+            
+            <tag> 运维安全 </tag>
+            
             <tag> 原型图 </tag>
             
             <tag> MockPlus </tag>
             
             <tag> OpenSOC </tag>
-            
-            <tag> 运维安全 </tag>
-            
-            <tag> 安全运营 </tag>
             
         </tags>
       
@@ -53,15 +53,15 @@
       
         <tags>
             
-            <tag> 运维安全 </tag>
-            
-            <tag> 安全运营 </tag>
-            
             <tag> 机器学习 </tag>
             
             <tag> 安全设备 </tag>
             
+            <tag> 安全运营 </tag>
+            
             <tag> 安全日志 </tag>
+            
+            <tag> 运维安全 </tag>
             
             <tag> 攻击链路 </tag>
             
@@ -88,13 +88,13 @@
       
         <tags>
             
-            <tag> 安全运营 </tag>
-            
             <tag> 机器学习 </tag>
             
             <tag> 安全设备 </tag>
             
             <tag> SOC </tag>
+            
+            <tag> 安全运营 </tag>
             
             <tag> 智能安全 </tag>
             
@@ -234,9 +234,9 @@
             
             <tag> 深度学习 </tag>
             
-            <tag> 特征抽取 </tag>
-            
             <tag> 恶意域名 </tag>
+            
+            <tag> 特征抽取 </tag>
             
             <tag> 异常检测 </tag>
             
